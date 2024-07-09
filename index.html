@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta description="ERP System" content="When you want to do management to your product in flexible way and increasing your agency by using Management System ">
+    
+    <title>Product Management Sales | Ahmed Nayel</title>
+
+    <!-- main css file to the project -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- font awesome -->
+     <link rel="stylesheet" href="css/all.css">
+
+     <!-- normalization file -->
+      <link rel="stylesheet" href="css/normalize.css">
+
+      <!-- logo -->
+       <link rel="icon" href="img/logo.png">
+</head>
+<body>
+
+   <div class="cruds">
+
+        <div class="head">
+            <h2>ERP system | Ahmed Nayel</h2>
+            <p>enterprise resources plan system </p>
+        </div>
+
+        <div class="inputs">
+
+            <input type="text" id="title" placeholder="product title">
+
+            <div class="price-input">
+
+                <input onkeyup="getTotal()" type="number" id="price"          placeholder="price">
+                <input onkeyup="getTotal()" type="number" id="taxes"          placeholder="taxes">
+                <input onkeyup="getTotal()" type="number" id="advertisements" placeholder="advertisements">
+                <input onkeyup="getTotal()" type="number" id="discount"       placeholder="discount">
+                <small id="total"></small>
+            
+            </div>
+
+            <input type="number" id="counter"  placeholder="number of product">
+            <input type="text"   id="category" placeholder="type of product">
+
+            <button id="submit"> Create Product </button>
+        
+        </div>
+
+        <div class="outputs">
+            
+            <div class="searchBlock">
+                <input onkeyup="searchingProcess(this.value)" type="text" id="searchProduct" placeholder="select type of searching before write your need!">
+        
+                <div class="btnSearch">
+                    <button onclick="searchingType(this.id)" id="searchByTitle"   >search by title</button>
+                    <button onclick="searchingType(this.id)" id="searchByCategory">search by category</button>
+                </div>
+            
+            </div>
+        
+        </div>
+
+        <div id="delete-all"></div>
+
+        <div class="table-info">
+            <table>
+            
+                <thead>
+                    <tr>
+                        <th>id      </th>
+                        <th>name    </th>
+                        <th>price   </th>
+                        <th>taxes   </th>
+                        <th>adverts </th>
+                        <th>discount</th>
+                        <th>total   </th>
+                        <th>category</th>
+                        <th>updates </th>
+                        <th>delete  </th>
+                    </tr>
+                </thead>
+    
+                <tbody id="tbody-content">
+                    <tr>
+                        <td data-label="id">1</td>
+                        <td data-label="name">samsung</td>
+                        <td data-label="price">750</td>
+                        <td data-label="taxes">10</td>
+                        <td data-label="adverts">no</td>
+                        <td data-label="discount">10</td>
+                        <td data-label="total">770</td>
+                        <td data-label="category">phone</td>
+                        <td data-label="updates"> <button id="btn-update">update</button> </td>
+                        <td data-label="delete"> <button id="btn-delete">delete</button> </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+   </div>
+</body>
+
+    <script src="flowData.js"></script>
+</html>
