@@ -1,3 +1,3 @@
 # Simple-ERP-System-By-JavaScript
 
-click here to visit website: https://to-do-list-with-ahmednayel.netlify.app/
+click here to visit website: https://simple-erp-system-with-ahmednayel.netlify.app/
