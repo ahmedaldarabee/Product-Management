@@ -1,18 +1,18 @@
 
-let title            = document.getElementById("title");
-let price            = document.getElementById("price");
-let taxes            = document.getElementById("taxes");
+let title            = document.getElementById("title")
+let price            = document.getElementById("price")
+let taxes            = document.getElementById("taxes")
 
-let advertisements  = document.getElementById("advertisements");
-let discount        = document.getElementById("discount");
-let total           = document.getElementById("total");
+let advertisements  = document.getElementById("advertisements")
+let discount        = document.getElementById("discount")
+let total           = document.getElementById("total")
 
-let counter         = document.getElementById("counter");
-let category        = document.getElementById("category");
-let submit          = document.getElementById("submit");
+let counter         = document.getElementById("counter")
+let category        = document.getElementById("category")
+let submit          = document.getElementById("submit")
 
-let currentMood = 'Create Product';
-let currentTempIndex;
+let currentMood = 'Create Product'
+let currentTempIndex
 
 // get total
 function getTotal(){
